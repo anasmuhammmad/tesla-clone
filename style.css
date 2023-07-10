@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+   
+}
+.logo img{
+    width: 8vw;
+    height: auto;
+
+}   
+header{
+   font-weight: 600;
+    top: 0%;
+    z-index: 2;
+    width: 100vw;
+
+}
+.hidingpart{
+    display: block;
+}
+.xl{
+    display: inline;
+}
+@media screen and (max-width:1200px) {
+    .xl{
+        display: none;
+       
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+#button{
+    height: 6vh;
+    width: 17vw;
+    border: 3px solid white ;
+    border-radius: 4px;
+    display: flex;
+    font-size: 1.4vw;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    top:75vh;
+    left: 40.5vw;
+}
+/*  */
+section{
+    height: 100vh;
+   background-size: cover;
+   background-position: center;
+     
+}
+.fullsections{
+    height: auto;
+    overflow-y: scroll;
+    scroll-snap-points-y: repeat(20vh);
+    scroll-snap-type:y pro;
+    scroll-behavior: smooth;
+   
+}
+.sections{
+    scroll-snap-align:start;
+}
+.section1
+{
+    background-image: url(media/1.avif);
+}
+.section2
+{
+    background-image: url(media/2.avif);
+}
+.section3
+{
+    background-image: url(media/3.avif);
+}
+.section4
+{
+    background-image: url(media/4.avif);
+}.section5
+{
+    background-image: url(media/5.avif);
+}
+.section6
+{
+    background-image: url(media/6.avif);
+}.section7
+{
+    background-image: url(media/7.avif);
+}
+.section8
+{
+    background-image: url(media/8.avif);
+}
+.text{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+.text h1{
+    font-size: 3rem;
+}
+.text a{
+    color: inherit;
+}
+.last-section{
+    
+    
+}
+.buttonsinsec a{
+    display: block;
+    background-color:#444;
+    color: #fff;
+    opacity: 0.80;
+     padding: 12px 50px;
+     border-radius: 5px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 500;
+
+}
+.buttonsinsec{
+    display: grid;
+    row-gap: 20px;
+    margin: 0 40px ;
+   
+
+}
+.buttonsinsec a:first-child{
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.80;
+}
+.last-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsinsec-2{
+    display: grid;
+    row-gap: 20px;
+    margin: 0 40px ;
+   
+
+}
+.text-2{
+    width:50vw;
+    height: 100vh;
+    
+    padding-left:30px;
+    padding-top: 13vh;
+    padding-bottom: 13vh;
+    text-align: center;
+    
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    align-items: center center;
+}
+.buttonsinsec-2 a{
+    display: block;
+    background-color:black;
+    color: #fff;
+    opacity: 0.80;
+     padding: 10px 50px;
+     border-radius: 5px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 500;
+
+}
+
+@media screen and (min-width:576px) {
+    .buttonsinsec{
+        max-width: 640px;
+        margin:0 auto;
+
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+aside{
+    position: fixed;
+    transition: right .4s ease;
+    right: -320px;
+    width: 320px;
+    background-color: #fff;
+    padding: 80px 40px;
+    z-index: 4;
+    height: 100vh;
+    overflow: scroll;
+}
+aside.active{
+    right: 0;
+}
+aside a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 18px;
+}
+aside button.close{
+    font-size: 34px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    
+}
+aside  a:hover{
+    background-color: #000000;
+    color: #fff;
+    opacity: 0.1;
+    border-radius: 4px;
+}
+.backdrop{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.35);
+    backdrop-filter: blur(5px);
+}
+
+
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:13px;
+  line-height:1.6;
+  margin-top: -2rem;
+}
+
+.footer-basic li {
+  padding:0 5px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+
+
+
+
+
+
